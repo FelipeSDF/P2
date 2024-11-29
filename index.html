@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CapMar</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="./css/responsive.css">
+    <!-- <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/sobre-nos.css">
+    <link rel="stylesheet" href="./css/clientes.css">
+    <link rel="stylesheet" href="./css/contato.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/responsive.css"> -->
+
+    <!--icone -->
+    <link rel="shortcut icon" href="./img/Inserir um título.png" type="image/x-png">
+    <script src="https://kit.fontawesome.com/6c3e596df5.js" crossorigin="anonymous" defer></script>
+
+
+</head>
+
+<body>
+    <header>
+        <img src="img/Inserir um título.png" alt="logo da empresa">
+        <ul class="menu-desktop">
+            <a href="#sobre-nos">
+                <li>Sobre nós</li>
+            </a>
+            <a href="#clientes">
+                <li>Clientes</li>
+            </a>
+            <a href="#contato">
+                <li>Contato</li>
+            </a>
+            <a href="#socias">
+                <li>Login</li>
+            </a>
+        </ul>
+
+        <div id="container-menu-mobile">
+            <div id="burguer-menu-container" class=".untoggled-burguer-menu-container" onclick="toggle_menu()">
+                <div class="buger-menu-icons"></div>
+                <div class="buger-menu-icons"></div>
+                <div class="buger-menu-icons"></div>
+            </div>
+
+            <ul id="overflow-menu-mobile" class="menu-mobile">
+                <a class="overflow-menu-links" href="#sobre-nos">
+                    <li>Sobre nós</li>
+                </a>
+                <a class="overflow-menu-links" href="#clientes">
+                    <li>Clientes</li>
+                </a>
+                <a class="overflow-menu-links" href="#contato">
+                    <li>Contato</li>
+                </a>
+                <a class="overflow-menu-links" href="#socias">
+                    <li>Login</li>
+                </a>
+            </ul>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <section class="main-container" id="sobre-nos">
+            <article class="content" id="quem-somos">
+                <h2>Quem Somos</h2>
+                <div>
+                    <p>Somos uma plataforma apaixonada em ajudar os estudantes e projetistas a ganharem visibilidade que
+                        tanto merecem ter. Essa nossa paixao está no nosso DNA, pois sabemos a importância da
+                        visibilidade para um projeto ir ao infinito e além.</p>
+                    <img src="img/CapMar-main/46 Sem Título_20241003211018.png" alt="capivara acenando">
+                </div>
+            </article>
+            <article class="content" id="nosso-objetivo">
+                <h2>Nosso Objetivo</h2>
+                <div>
+                    <p>Nosso objetivo é ajudar estudantes e micro empreendedores projetistas da cidade de Maricá a
+                        conquistatem mais visibilidade, engajamento e investimento para seus projetos. Graças a nossa
+                        plataforma que visa estabelecer vinculos e network entre projetista e apoiadores isso agora é
+                        possivel.</p>
+                    <img src="img/CapMar-main/46 Sem Título_20241003210918.png" alt="capivara com prancheta">
+                </div>
+            </article>
+            <article class="content" id="proximo-passo">
+                <h2>Seu proximo passo</h2>
+                <div>
+                    <p>Se você, pequeno projetista, quer dar mais visisbilidade para seus projetos e com isso ganhar
+                        mais engajamento e reconhecimento, se cadastre e comece a exibir seus projetos em nossa
+                        plataforma. Aqui voce poderá encontrar possiveis interesados em te ajudar no seu projetos como:
+                        investidores, orientadores, pessoas que podem fazer collab com voce e muito mais.</p>
+                    <img src="img/CapMar-main/46 Sem Título_20241003210848.png" alt="capivara caminhando">
+                </div>
+            </article>
+        </section>
+
+        <section class="main-container" id="clientes">
+
+            <div id="container-card" class="container carrossel " onmouseenter="parar_carrossel()"
+                onmouseout="start_carrossel()">
+                <img id="carrossel-image-alternable" src="img/retrato/1.jpg" alt="Plateia">
+            </div>
+
+            </div>
+        </section>
+
+        <section class="main-container" id="contato">
+            <form id="content-container">
+                <h1 id="title-contact">Contato</h1>
+                <div class="inputs" id="container-name">
+                    <label for="name">Nome</label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div class="inputs" id="container-fone">
+                    <label for="fone">Telefone</label>
+                    <input type="number" name="fone" id="fone">
+                </div>
+                <div class="inputs" id="container-email">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <img src="./img/istockphoto-177228186-612x612-removebg-preview.png" alt="Nossa Cap" id="img-contato">
+                <button id="button-contatar">Contatar</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <section id="socias">
+            <div id="redes-socias">
+                <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a href=""><i class="fa-solid fa-globe"></i></a>
+            </div>
+            <div id="conta">
+                <a href="">
+                    <p>Criar Conta</p>
+                </a>
+                <a href="">
+                    <p>Fazer login</p>
+                </a>
+            </div>
+            <div id="network">
+                <a href="">
+                    <p>Conheça os nossos criadores</p>
+                </a>
+                <a href="">
+                    <p>Veja mais projetos nossos</p>
+                </a>
+            </div>
+        </section>
+        <span id="copy">
+            &copy; CapMar, 2024. Todos os direitos reservados
+        </span>
+    </footer>
+
+    <script src="./js/scripts.js"></script>
+    <script src="./js/menu-mobile.js"></script>
+</body>
+
+</html>
