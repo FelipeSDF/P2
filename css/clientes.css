@@ -1,0 +1,28 @@
+#sobre-nos{
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.carrossel{
+    width: 400%;
+    height: auto;
+    display: flex;
+}
+
+.carrossel input{
+    display: none;
+}
+
+.container-card{
+    width: 25%;
+    height: auto;
+    position: relative;
+    text-align: center;
+
+}
+
+.container-card img{
+    width: 100%;
+}

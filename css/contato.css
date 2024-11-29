@@ -1,0 +1,91 @@
+
+/*Area contato com display grid*/
+
+#contato{
+    background-color: rgb(79, 139, 79);
+    justify-content: center;
+    align-items: center;
+}
+
+#content-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: 
+    "title-contact ."
+    "name img-contato"
+    "fone img-contato"
+    "email img-contato"
+    "button-contatar .";
+
+    background-color: white;
+    width: 35%;
+    height: 70vh;
+
+    border-radius: 10px;
+
+    place-items: center;
+
+    box-shadow: 0 0 10px;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs label{
+    font-size: 1.3em;
+}
+
+
+#title-contact{
+    grid-area: title-contact;
+
+
+    font-size: 2.5em;
+}
+
+#container-name{
+    grid-area: name;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+#container-fone{
+    grid-area: fone;
+}
+
+#container-email{
+    grid-area: email
+}
+
+#img-contato{
+    grid-area: img-contato;
+
+    align-items: center;
+
+    width: 100px;
+    
+}
+
+#img-contato:hover{
+    cursor: pointer;
+    scale: 1.1 ;
+    transition: 0.3s ease-in-out;
+
+}
+
+#button-contatar{
+    grid-area: button-contatar;
+
+
+}
+
+#button-contatar:hover, #button-contatar:active{
+    background-color: var(--color-primary-green);
+    color: white;
+}

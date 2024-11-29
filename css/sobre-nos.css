@@ -1,0 +1,49 @@
+/*Section sobre nos*/
+
+#sobre-nos{
+    background-color: var(--color-primary-darkblue);
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+.content h2{
+    font-size: 2em;
+
+}
+
+.content div{
+    display: flex;
+    gap: 50px;
+}
+
+.content:hover{
+    scale: 1.1;
+    color: white;
+
+    transition: 0.3s ease-in-out;
+}
+
+.content div p{
+    font-size: 1.2em;
+}
+
+#nosso-objetivo{
+    position: relative;
+    right: 5%;
+}
+
+.content div img{
+    width: 130px;
+    height: 130px;
+
+}
+
+.content div img:hover{
+    scale: 1.2;
+    transition: 0.5s ease-in-out;
+}

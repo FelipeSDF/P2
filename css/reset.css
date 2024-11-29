@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{overflow-x: hidden;}
+:root{
+    --color-primary-darkblue: #15349c;
+    --color-primary-blue: #57b8ff;
+    --color-primary-red: #fe6847;
+    --color-primary-yellow: #fbb13c;
+    --color-primary-brown: #866d0d;
+    --color-primary-green: #9bd590;
+
+    --font-family-primary: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+a, ul{
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+input, button{
+    border: 0;
+    outline: 0; /*tracejado por fora da caixa*/
+    border-radius: 6px;
+    width: 300px;
+    padding: 10px 14px;
+    font-size: 1em;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 4);
+
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+input:focus, select:focus{
+    box-shadow: inset 1px 1px 3px  rgba(0, 0, 0, 0.4);
+}

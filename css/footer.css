@@ -1,0 +1,56 @@
+/*FOOTER*/
+
+footer{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2,fr);
+    grid-template-areas: 
+        "socias"
+        "copy"
+
+    ;
+}
+
+#socias{
+    grid-area: socias;
+
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#redes-socias{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    gap: 25px;
+    
+}
+
+#conta, #network{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 15px;
+
+}
+
+#socias div a:hover{
+    color: var(--color-primary-darkblue);
+}
+
+#socias div a p{
+    font-size: 1.2em;
+}
+
+#copy{
+    grid-area: copy;
+
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+
